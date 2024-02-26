@@ -261,4 +261,8 @@ window.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+
+    fetch('db.json')
+    .then(data => data.json())
+    .then(res => console.log(res))
 });
